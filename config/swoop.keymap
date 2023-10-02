@@ -78,32 +78,33 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_LSHFT {
+        combo_00 {
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <>;
             bindings = <&kp  LSHFT>;
         };
- combo_11 {
+
+        combo_11 {
             timeout-ms = <40>;
-            key-positions = <20 21>;
+            key-positions = <>;
             bindings = <&mo 2>;
         };
 
         combo_22 {
             timeout-ms = <50>;
-            key-positions = <21 26>;
+            key-positions = <>;
             bindings = <&kp EXCL>;
         };
 
         combo_33 {
             timeout-ms = <50>;
-            key-positions = <21 27>;
+            key-positions = <>;
             bindings = <&kp AT>;
         };
 
         combo_44 {
             timeout-ms = <50>;
-            key-positions = <21 28>;
+            key-positions = <>;
             bindings = <&kp HASH>;
         };
     };
@@ -114,12 +115,12 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt 1 ESC  &kp N1  &kp N2        &kp N3    &kp N4     &kp N5        &kp N6    &kp N7     &kp N8     &kp N9        &kp N0    &lt 1 MINUS
-&lt 2 TAB  &kp Q   &kp W         &kp E     &kp R      &kp T         &kp Y     &kp U      &kp I      &kp O         &kp P     &lt 2 EQUAL
-&kp LSHFT  &kp A   &kp S         &kp D     &kp F      &kp G         &kp H     &kp J      &kp K      &kp L         &kp SEMI  &kp SQT
-&kp CAPS   &kp Z   &kp X         &kp C     &kp V      &kp B         &kp N     &kp M      &kp COMMA  &kp DOT       &kp FSLH  &kp LSHFT
-                   &kp GRAVE     &kp BSLH  &kp BSPC   &kp SPACE     &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
-                   &kp C_VOL_DN  &kp LALT  &kp LCTRL  &mt LGUI DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp C_VOL_UP
+&lt 1 ESC  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5        &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
+&lt 2 TAB  &kp Q   &kp W      &kp E      &kp R      &kp T         &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
+&kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G         &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp CAPS   &kp Z   &kp X      &kp C      &kp V      &kp B         &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
+                   &kp LC(C)  &kp LC(V)  &kp BSPC   &kp SPACE     &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
+                   &kp GRAVE  &kp LALT   &kp LCTRL  &mt LGUI DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp AMPS
             >;
         };
 
