@@ -120,7 +120,7 @@
 &kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G         &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp CAPS   &kp Z   &kp X      &kp C      &kp V      &kp B         &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
                    &kp LC(C)  &kp LC(V)  &kp BSPC   &kp SPACE     &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
-                   &kp GRAVE  &kp LALT   &kp LCTRL  &mt LGUI DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp AMPS
+                   &kp GRAVE  &kp LALT   &kp LCTRL  &mt LGUI DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
             >;
         };
 
