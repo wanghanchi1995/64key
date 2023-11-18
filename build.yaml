@@ -11,9 +11,9 @@
 
 include:
   - board: nice_nano_v2
-    shield: swoop_left nice_view_adapter  nice_view
+    shield: swoop_left 
   - board: nice_nano_v2
-    shield: swoop_right nice_view_adapter  nice_view
+    shield: swoop_right 
   - board: nice_nano_v2
     shield: settings_reset
   
