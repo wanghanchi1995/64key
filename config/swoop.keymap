@@ -18,9 +18,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings =
-                <&kp ESC>,
-                <&kp TAB>;
+            bindings = <&kp ESC>, <&kp TAB>;
         };
     };
 
@@ -32,17 +30,14 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
+
         modcp: mod_copy {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_COPY";
             #binding-cells = <0>;
-            bindings =
-                <&as LS(C) C>,
-                <&kp C>;
+            bindings = <&as LS(C) C>, <&kp C>;
 
             mods = <(LGUI | RGUI)>;
         };
@@ -57,6 +52,7 @@
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N3 &kp N5 &kp N1>;
         };
+
         macro_email_q: macro_email_q {
             // 2894512440@qq.com
 
@@ -65,6 +61,7 @@
             #binding-cells = <0>;
             bindings = <&kp N2 &kp N8 &kp N9 &kp N4 &kp N5 &kp N1 &kp N2 &kp N4 &kp N4 &kp N0 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
         };
+
         macro_email_g: macro_email_g {
             // 135115
 
@@ -115,12 +112,12 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt 1 ESC  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5        &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
-&lt 2 TAB  &kp Q   &kp W      &kp E      &kp R      &kp T         &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
-&kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G         &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp CAPS   &kp Z   &kp X      &kp C      &kp V      &kp B         &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
-                   &kp LC(C)  &kp LC(V)  &kp BSPC   &kp SPACE     &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
-                   &kp GRAVE  &kp LALT   &kp LCTRL  &mt LGUI DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
+&lt 1 ESC  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
+&lt 2 TAB  &kp Q   &kp W      &kp E      &kp R      &kp T             &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
+&kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G             &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp CAPS   &kp Z   &kp X      &kp C      &kp V      &kp B             &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
+                   &kp LGUI   &kp GRAVE  &kp BSPC   &kp SPACE         &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
+                   &kp GRAVE  &kp LALT   &kp LCTRL  &mt LEFT_ALT DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
             >;
         };
 
