@@ -11,6 +11,11 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&lt {
+    quick-tap-ms = <180>;
+    flavor = "tap-preferred";
+};
+
 / {
     behaviors {
         td0: tap_dance_0 {
