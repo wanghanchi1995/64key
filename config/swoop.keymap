@@ -70,22 +70,22 @@
             bindings = <
 &lt 1 ESC  &kp N1  &kp N2     &kp N3     &kp N4     &kp N5            &kp N6    &kp N7     &kp N8     &kp N9    &kp N0    &lt 1 MINUS
 &lt 2 TAB  &kp Q   &kp W      &kp E      &kp R      &kp T             &kp Y     &kp U      &kp I      &kp O     &kp P     &lt 2 EQUAL
-&kp LSHFT  &kp A   &kp S      &kp D      &kp F      &kp G             &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp CAPS   &kp Z   &kp X      &kp C      &kp V      &kp B             &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
-                   &kp LGUI   &kp GRAVE  &kp BSPC   &kp SPACE         &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
-                   &kp GRAVE  &kp LALT   &kp LCTRL  &mt LEFT_ALT DEL  &kp LEFT  &kp RIGHT  &kp DOWN   &kp NUBS
+&lt 3 CAPS  &kp A   &kp S      &kp D      &kp F      &kp G             &kp H     &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT   &kp Z   &kp X      &kp C      &kp V      &kp B             &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp LSHFT
+                  &kp GRAVE     &kp LEFT_WIN  &kp BSPC          &kp SPACE          &kp UP    &kp ENTER  &kp LBKT   &kp RBKT
+                  &kp LEFT_ALT  &none         &kp LEFT_CONTROL  &mt BACKSLASH DEL  &kp LEFT  &kp RIGHT  &none      &kp DOWN_ARROW
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-&trans  &none         &kp F10  &kp F11  &kp F12  &none   &none   &none      &kp KP_SLASH  &kp KP_MULTIPLY  &kp KP_MINUS  &none
-&trans  &macro_phone  &kp F7   &kp F8   &kp F9   &none   &none   &kp KP_N7  &kp KP_N8     &kp KP_N9        &kp KP_PLUS   &none
-&trans  &none         &kp F4   &kp F5   &kp F6   &none   &none   &kp KP_N4  &kp KP_N5     &kp KP_N6        &kp ENTER     &none
-&trans  &none         &kp F1   &kp F2   &kp F3   &none   &none   &kp KP_N1  &kp KP_N2     &kp KP_N3        &kp ENTER     &kp ENTER
-                      &trans   &trans   &trans   &trans  &none   &none      &kp KP_N0     &kp KP_DOT
-                      &trans   &trans   &trans   &trans  &trans  &none      &none         &trans
+&trans  &kp F1   &kp F2   &kp F3           &kp F4  &kp F5          &kp F6       &kp F7   &kp F8  &kp F9         &kp F10       &none
+&trans  &kp F11  &kp F12  &none   &none   &none           &none        &none    &none   &none          &none  &none
+&trans  &none    &none    &none            &none   &none  &none        &none    &none   &none          &none         &none
+&trans  &none    &none    &none            &none   &none           &none        &none    &none   &none          &none         &none
+                 &trans   &kp PRINTSCREEN  &trans  &trans          &kp PAGE_UP  &none    &none   &none
+                 &trans   &trans           &trans  &trans          &kp HOME     &kp END  &none   &kp PAGE_DOWN
             >;
         };
 
@@ -104,12 +104,12 @@
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none  &none  &none  &none
-              &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none              &none  &none  &none  &none  &none  &none  &none  &kp C_VOLUME_DOWN
+&none  &none  &none  &none              &none  &none  &none  &none  &none  &none  &none  &kp C_VOLUME_UP
+&none  &none  &none  &none              &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none              &none  &none  &none  &none  &none  &none  &none  &none
+              &none  &kp K_APPLICATION  &none  &none  &none  &none  &none  &none
+              &none  &none              &none  &none  &none  &none  &none  &none
             >;
         };
     };
